@@ -1,7 +1,10 @@
 [package]
 name = "local-serve"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
+license = "MIT"
+repository = "https://github.com/kainlite/local-serve"
+description = "A simple file share over HTTP"
 
 [dependencies]
 axum = "0.8.1"
