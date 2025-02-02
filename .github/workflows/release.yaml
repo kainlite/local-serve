@@ -66,6 +66,8 @@ jobs:
           target: ${{ matrix.target }}
           override: true
 
+      - uses: Swatinem/rust-cache@v2
+
       - name: Patch binary version
         shell: python
         run: |
