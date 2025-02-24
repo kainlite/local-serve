@@ -1,9 +1,9 @@
 use axum::{
+    Router,
     extract::Path,
-    http::{header, HeaderMap, StatusCode},
+    http::{HeaderMap, StatusCode, header},
     response::IntoResponse,
     routing::get,
-    Router,
 };
 use clap::Parser;
 use mime_guess::from_path;
