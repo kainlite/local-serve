@@ -7,9 +7,10 @@ permissions:
   pull-requests: write
 
 jobs:
-  # tests:
-  #   uses: ./.github/workflows/tests.yaml
+  tests:
+    uses: ./.github/workflows/tests.yaml
   dependabot:
+    needs: [tests]
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
