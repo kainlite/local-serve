@@ -57,7 +57,7 @@ jobs:
             asset_name: local-serve-windows-amd64.exe
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Install Rust
         uses: actions-rs/toolchain@v1
